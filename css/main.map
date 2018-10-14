@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "_scss/main.css",
+	"sources": [
+		"_scss/main.scss",
+		"_scss/_colors.scss",
+		"_scss/_fonts.scss",
+		"_scss/_urls.scss"
+	],
+	"sourcesContent": [
+		"@import \"_colors.scss\";\n@import \"_fonts.scss\";\n@import \"_urls.scss\";\n@import url('https://fonts.googleapis.com/css?family=Gabriela|Open+Sans'); // Google Fonts, can't use URL variable\n\n$debug: false; // Debug mode boolean\n\n* {\n  @if ($debug) {\n    border: 1px solid red;\n  }\n}\n\nbody {\n\tbackground-color: $color_log_cabin_approx;\n\tbackground-image: $url_1;\n\tfont-family: $font_0, $font_1, $font_2;\n}\n\n@for $i from 1 through 6 { // Loop that sets the font face for all headings\n  h#{7 - $i} {\n    font-family: $font_3, $font_4, $font_5;\n  }\n}\n\nh1 {\n\tcolor: $white;\n}\n\n.carousel-caption {\n\th3 {\n\t\tcolor: $red;\n\t}\n\tp {\n\t\tcolor: $red;\n\t}\n}\n\n.content-box {\n\tmargin-top: 50px;\n\tmargin-bottom: 50px;\n\tpadding-top: 15px;\n\tbackground-color: $color_gray_nurse_approx;\n}\n\n.hero-top {\n\tbackground: $url_2 no-repeat center center;\n\tbackground-size: cover;\n\t.lead {\n\t\tcolor: $color_celeste_approx;\n\t}\n}\n\n.dark-transparency {\n\tpadding: 25px;\n\tbackground-color: $black_55;\n}\n\n.margin-top15 {\n\tmargin-top: 15px;\n}\n\n.margin-bottom15 {\n\tmargin-bottom: 15px;\n}\n\n.margin-right15 {\n\tmargin-right: 15px;\n}\n\n.border-red {\n\tborder: 1px solid $red;\n}\n\n@media(max-width: 575px) {\n\t.content-box {\n\t\tmargin-top: 0;\n\t\tmargin-bottom: 0;\n\t}\n}\n",
+		"//colors\n\n$color_log_cabin_approx: #222;\n$white: white;\n$red: red;\n$color_gray_nurse_approx: #e8e8e8;\n$black_55: rgba(0,0,0,.55);\n$color_celeste_approx: #ccc;\n",
+		"//fonts\n\n$font_0: 'Open Sans';\n$font_1: Verdana;\n$font_2: sans-serif;\n$font_3: Gabriela;\n$font_4: Georgia;\n$font_5: serif;\n",
+		"//urls\n\n$url_1: url('../images/texture-office.png');\n$url_2: url('../images/bmw-engine-background.jpg');\n"
+	],
+	"mappings": "AAGA,OAAO,CAAC,iEAAI;;AAUZ,AAAA,IAAI,CAAC;EACJ,gBAAgB,ECZQ,IAAI;EDa5B,gBAAgB,EGbT,mCAAG;EHcV,WAAW,EEdH,WAAW,EACX,OAAO,EACP,UAAU;CFalB;;;AAGC,AAAA,EAAE,CAAF;EACE,WAAW,EEhBN,QAAQ,EACR,OAAO,EACP,KAAK;CFeX;;;AAFD,AAAA,EAAE,CAAF;EACE,WAAW,EEhBN,QAAQ,EACR,OAAO,EACP,KAAK;CFeX;;;AAFD,AAAA,EAAE,CAAF;EACE,WAAW,EEhBN,QAAQ,EACR,OAAO,EACP,KAAK;CFeX;;;AAFD,AAAA,EAAE,CAAF;EACE,WAAW,EEhBN,QAAQ,EACR,OAAO,EACP,KAAK;CFeX;;;AAFD,AAAA,EAAE,CAAF;EACE,WAAW,EEhBN,QAAQ,EACR,OAAO,EACP,KAAK;CFeX;;;AAFD,AAAA,EAAE,CAAF;EACE,WAAW,EEhBN,QAAQ,EACR,OAAO,EACP,KAAK;CFeX;;;AAGH,AAAA,EAAE,CAAC;EACF,KAAK,ECvBE,KAAK;CDwBZ;;;AAED,AACC,iBADgB,CAChB,EAAE,CAAC;EACF,KAAK,EC3BD,GAAG;CD4BP;;;AAHF,AAIC,iBAJgB,CAIhB,CAAC,CAAC;EACD,KAAK,EC9BD,GAAG;CD+BP;;;AAGF,AAAA,YAAY,CAAC;EACZ,UAAU,EAAE,IAAK;EACjB,aAAa,EAAE,IAAK;EACpB,WAAW,EAAE,IAAK;EAClB,gBAAgB,ECrCS,OAAO;CDsChC;;;AAED,AAAA,SAAS,CAAC;EACT,UAAU,EG3CH,0CAAG,CH2CS,SAAS,CAAC,MAAM,CAAC,MAAM;EAC1C,eAAe,EAAE,KAAM;CAIvB;;;AAND,AAGC,SAHQ,CAGR,KAAK,CAAC;EACL,KAAK,EC1CgB,IAAI;CD2CzB;;;AAGF,AAAA,kBAAkB,CAAC;EAClB,OAAO,EAAE,IAAK;EACd,gBAAgB,ECjDN,mBAAI;CDkDd;;;AAED,AAAA,aAAa,CAAC;EACb,UAAU,EAAE,IAAK;CACjB;;;AAED,AAAA,gBAAgB,CAAC;EAChB,aAAa,EAAE,IAAK;CACpB;;;AAED,AAAA,eAAe,CAAC;EACf,YAAY,EAAE,IAAK;CACnB;;;AAED,AAAA,WAAW,CAAC;EACX,MAAM,EAAE,GAAG,CAAC,KAAK,CCnEZ,GAAG;CDoER;;AAED,MAAM,EAAL,SAAS,EAAE,KAAK;;EAChB,AAAA,YAAY,CAAC;IACZ,UAAU,EAAE,CAAE;IACd,aAAa,EAAE,CAAE;GACjB",
+	"names": []
+}

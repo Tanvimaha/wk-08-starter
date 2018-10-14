@@ -1,0 +1,48 @@
+@import "_colors.scss";
+@import "_fonts.scss";
+@import "_urls.scss";
+@import url('https://fonts.googleapis.com/css?family=Gabriela|Open+Sans'); // Google Fonts, can't use URL variable
+
+$debug: false; // Debug mode boolean
+
+* {
+  @if ($debug) {
+    border: 1px solid red;
+  }
+}
+
+body {
+	background-color: $color_log_cabin_approx;
+	background-image: $url_1;
+	font-family: $font_0, $font_1, $font_2;
+}
+
+@for $i from 1 through 6 { // Loop that sets the font face for all headings
+  h#{7 - $i} {
+    font-family: $font_3, $font_4, $font_5;
+  }
+}
+
+h1 {
+	color: $white;
+}
+
+.carousel-caption {
+	h5 {
+		color: $white;
+	}
+	p {
+		color: $white;
+	}
+}
+
+.content-box {
+	background-color: $color_gray_nurse_approx;
+}
+
+
+
+
+.border-red {
+	border: 1px solid $red;
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Gabriela|Open+Sans");
+body {
+  background-color: #222;
+  background-image: url("https://designshack.net/wp-content/uploads/black-texture-background.jpg");
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+h6 {
+  font-family: Gabriela, Georgia, serif;
+}
+
+h5 {
+  font-family: Gabriela, Georgia, serif;
+}
+
+h4 {
+  font-family: Gabriela, Georgia, serif;
+}
+
+h3 {
+  font-family: Gabriela, Georgia, serif;
+}
+
+h2 {
+  font-family: Gabriela, Georgia, serif;
+}
+
+h1 {
+  font-family: Gabriela, Georgia, serif;
+}
+
+h1 {
+  color: white;
+}
+
+.carousel-caption h5 {
+  color: white;
+}
+
+.carousel-caption p {
+  color: white;
+}
+
+.content-box {
+  background-color: #e8e8e8;
+}
+
+.border-red {
+  border: 1px solid red;
+}
